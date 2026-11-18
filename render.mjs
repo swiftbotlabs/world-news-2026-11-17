@@ -36,7 +36,7 @@ try {
   // Layout check: overflowing/clipped text boxes and anything under 15 px.
   const problems = await page.evaluate(() => {
     const out = [];
-    for (const el of document.querySelectorAll(".card, .txt, .hl, .dt, .tag, header, .date, footer")) {
+    for (const el of document.querySelectorAll(".card, .txt, .hl, .dt, .tag, header, .date, footer, footer div")) {
       if (el.scrollWidth > el.clientWidth + 1 || el.scrollHeight > el.clientHeight + 1)
         out.push(`overflow: ${el.className || el.tagName} "${el.textContent.trim().slice(0, 40)}"`);
     }
