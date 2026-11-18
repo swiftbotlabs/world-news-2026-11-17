@@ -50,7 +50,7 @@ Research done 18 Nov 2026 with web search and fetch.
   https://www.cnbc.com/2026/11/16/stock-market-today-live-updates.html ;
   https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000088/q3fy27pr.htm
 
-### 5. UN: 2,230 civilians killed in Sudan this year, most by drones (Africa, war)
+### 5. UN: over 2,230 civilians killed in Sudan this year, most by drones (Africa, war)
 - Fact: UN Human Rights Office said on 17 Nov that at least 2,230 civilians were killed in Sudan from January
   to October 2026, more than 1,630 of them in drone strikes; true toll likely higher. Kordofan worst hit.
 - Date evidence: Middle East Monitor 20261117; Dabanga; Reuters (via OkayAfrica "Today in Africa, Nov. 17");
@@ -59,17 +59,7 @@ Research done 18 Nov 2026 with web search and fetch.
   https://www.dabangasudan.org/en/all-news/article/un-2230-civilian-deaths-in-sudan-in-10-months-most-from-drone-strikes ;
   https://www.okayafrica.com/today-in-africa-nov-17-2026-eu-keeps-aviation-bans-on-12-african-countries-naming-87-airlines-mo-abudu-launches-50m-afro-film-fund/1442009
 
-### 6. Mongolia's president announces resignation (Asia, politics)
-- Fact: President Ukhnaa Khurelsukh announced on Tuesday 17 Nov he will resign after corruption accusations
-  tied to a railway project (former Ulaanbaatar mayor Nyambaatar Khishgee alleged $25 million); he denies
-  wrongdoing. Parliament (State Great Khural) must accept the resignation.
-- Date evidence: AP via US News dated 2026-11-17; Khaleej Times; Manila Times 2026/11/18; Arab News;
-  Wikipedia portal 17 Nov.
-- Links: https://www.usnews.com/news/world/articles/2026-11-17/mongolian-president-announces-resignation-over-alleged-corruption ;
-  https://www.khaleejtimes.com/world/asia/mongolia-president-ukhnaa-khurelsukh-resigns-corruption-allegations-impeachment-threats ;
-  https://www.manilatimes.net/2026/11/18/world/asia-oceania/mongolia-president-resigns-amid-graft-charges/2472246
-
-### 7. Trump lands in Manila for ASEAN summit (Asia-Pacific, diplomacy)
+### 6. Trump lands in Manila for ASEAN summit (Asia-Pacific, diplomacy)
 - Fact: Trump arrived in Manila on 17 Nov for a state visit and the ASEAN-US special summit, first leg of an
   Asia trip; meets President Marcos on 18 Nov, then goes to Shenzhen, China, for APEC, where a meeting with
   Xi Jinping and Vladimir Putin is planned for Thursday. Protests in Manila.
@@ -79,6 +69,16 @@ Research done 18 Nov 2026 with web search and fetch.
   https://www.rappler.com/philippines/trump-arrives-state-visit-asean-special-summit-2026/ ;
   https://www.democracynow.org/2026/11/17/headlines
 - Wording kept cautious: the three-way meeting is described as planned ("next: Shenzhen"), not as happened.
+
+### 7. Mongolia's president announces resignation (Asia, politics)
+- Fact: President Ukhnaa Khurelsukh announced on Tuesday 17 Nov he will resign after corruption accusations
+  tied to a railway project (former Ulaanbaatar mayor Nyambaatar Khishgee alleged $25 million); he denies
+  wrongdoing. Parliament (State Great Khural) must accept the resignation.
+- Date evidence: AP via US News dated 2026-11-17; Khaleej Times; Manila Times 2026/11/18; Arab News;
+  Wikipedia portal 17 Nov.
+- Links: https://www.usnews.com/news/world/articles/2026-11-17/mongolian-president-announces-resignation-over-alleged-corruption ;
+  https://www.khaleejtimes.com/world/asia/mongolia-president-ukhnaa-khurelsukh-resigns-corruption-allegations-impeachment-threats ;
+  https://www.manilatimes.net/2026/11/18/world/asia-oceania/mongolia-president-resigns-amid-graft-charges/2472246
 
 ### 8. Russian military plane crash in Siberia kills all 19 aboard (Russia/Asia, disaster)
 - Fact: An An-12 military transport crashed in Kemerovo region, Siberia; Russia's Defence Ministry said all 19
