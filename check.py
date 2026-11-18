@@ -26,7 +26,8 @@ def run(out: Path) -> bytes:
     target = out / "entry.png"
     if target.exists():
         target.unlink()
-    env = dict(os.environ, MAKEFUN_OUTPUT_DIR=str(out))
+    env = {k: v for k, v in os.environ.items() if not k.startswith("MAKEFUN_")}
+    env["OUTPUT_DIR"] = str(out)
     subprocess.run([sys.executable, str(ROOT / "main.py")], check=True, env=env, cwd=ROOT)
     return target.read_bytes()
 

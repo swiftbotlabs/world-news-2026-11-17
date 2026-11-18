@@ -22,7 +22,7 @@ numbered story cards, each with a hand-drawn SVG icon, a region tag, a headline 
 ```sh
 # render poster.html -> entry.png (downloads Natural Earth 110m land, world-atlas@2.0.2, into ./tmp/ if missing)
 NODE_PATH=/data/motion/node_modules PLAYWRIGHT_BROWSERS_PATH=/data/motion/pw-browsers node render.mjs
-# copy entry.png to /output (or $MAKEFUN_OUTPUT_DIR)
+# check entry.png (PNG/JPEG signature, <= 1 MiB) and copy it to /output (or $OUTPUT_DIR)
 python3 main.py
 # run main.py twice and validate the output (bytes, PNG chunks/CRCs, size, 1024 x 1024)
 python3 check.py
