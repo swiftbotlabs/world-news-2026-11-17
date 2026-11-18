@@ -8,8 +8,9 @@ A bright editorial front page, 1024 x 1024:
   plus two small dots marking Mexico and Bolivia for the measles story.
 - **Cards:** eight numbered story cards in a 2 x 4 grid. Each has a flat SVG icon drawn by hand, a region
   tag, a 30 px bold two-line headline and one detail line carrying the key number or name.
-- **Footer:** "Events of 17 Nov 2026 (any time zone), as reported by Reuters, AP, AFP, NPR, CNBC,
-  Euronews, Anadolu, Xinhua and PAHO".
+- **Footer:** two 15 px lines. "Events of 17 Nov 2026 (any time zone), as reported by Reuters, AP, AFP,
+  NPR, CNBC, Euronews, Anadolu, Xinhua and PAHO" and, addressed to the reader, "All 8 events are dated
+  17 Nov 2026 and each was checked against at least two news reports."
 - **Style:** one accent colour (red #c62b1e) with warm neutrals, no gradients, no text under 15 px.
   The layout check in render.mjs found no overflowing or clipped text.
 
@@ -44,7 +45,9 @@ rather than a misdated one.
    Now, Just Security Early Edition, OkayAfrica) and wire syndications. Checked each story's date against
    neighbouring days.
 2. Built poster.html, plus render.mjs (Playwright Chromium, 1024 x 1024, device scale 1, with an automatic
-   layout and font-size check), main.py and check.py.
+   layout and font-size check), main.py and check.py. main.py checks the PNG/JPEG signature and the
+   1048576-byte limit, then writes the exact bytes to /output/entry.png (OUTPUT_DIR overrides the folder for
+   local tests). It exits 1 without writing anything for a non-image or an oversized file (tested in ./tmp).
 3. First version, then two improvement passes, each viewed at full size and at 300 px:
    - Pass 1: fixed the date clipped at the right edge, rebalanced the headline breaks and enlarged them from
      27 to 30 px, increased map contrast, enlarged the markers, redrew the radar icon, removed the
@@ -53,12 +56,16 @@ rather than a misdated one.
    - Pass 2: checked every fact against sources.md and changed "2,230" to "over 2,230" to match the UN's
      wording. Added the Mexico and Bolivia dots for story 3 and the key "Numbered markers match the
      stories below".
+   - Follow-up: added the second footer line (the card grid moved up 6 px and lost 10 px of height to make
+     room, with every text still at least 15 px and nothing clipped, viewed at full size and 300 px).
+     Renumbered stories 6 and 7 in sources.md to match the image (README already matched), and aligned
+     the Sudan heading there with the image ("over 2,230").
 
 ## Check results (`python3 check.py`)
 ```
 [PASS] two runs write identical bytes
 [PASS] output equals repo entry.png
-[PASS] size <= 1048576 bytes: 256101 bytes
+[PASS] size <= 1048576 bytes: 262308 bytes
 [PASS] PNG signature
 [PASS] PNG chunks, CRCs, IHDR/IDAT/IEND, data length: all ok
 [PASS] exactly 1024 x 1024: 1024 x 1024
@@ -66,11 +73,14 @@ ALL CHECKS PASSED
 ```
 
 ## File
-- entry.png: PNG, 1024 x 1024, **256101 bytes**
-- sha256: **cbf2aa8e609c4f151471e104f0f8840b54a76a05ce41bfc4173cedb88d1d9ee8**
+- entry.png: PNG, 1024 x 1024, **262308 bytes**
+- sha256: **367df03a83f72f2ec657ab0236d832c4444c180b8904273413f200b90ea7fef9**
 
 ## Commits
-- Final image and pass 2: aa3ed7fe03ea51dab839fed445c5f5a6249996af
+- Pass 2: aa3ed7fe03ea51dab839fed445c5f5a6249996af
 - README: 64fd85e800f0ed11f36edbe066de80e205aef52b
+- main.py validates before copying, OUTPUT_DIR: 7325ecb3d641f59cdc3b2f09bfecbdcd86168621
+- Footer second line, final image: bc83b6284aaf015d3c1559882038fb58bdda83d7
+- sources.md numbering fix: 5fb6886da2c891b1fb3e6ad89e8a979e2ae7761b
 - This RESULT.md is committed on top of these as the final commit; a commit cannot contain its own sha,
   so see `git log -1`. Not pushed.
